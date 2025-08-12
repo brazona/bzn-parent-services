@@ -90,12 +90,5 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		<repository>
-			<id>github-parent</id>
-			<url>https://maven.pkg.github.com/brazona/bzn-parent-services</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
 	</repositories>
 </project>
