@@ -52,7 +52,15 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '24'
-
+      - name: Set up Settings.xml 
+        uses: s4u/maven-settings-action@v3.1.0
+        with:
+          servers: |
+            [{
+                "id": "github-core",
+                "username": "${{ secrets.MAVEN_GITHUB_USERNAME }}",
+                "password": "${{ secrets.MAVEN_GITHUB_PASSWORD }}"
+            }]  
       - name: Publish package
         run: mvn -f ./app/ clean install package --batch-mode deploy
         env:
