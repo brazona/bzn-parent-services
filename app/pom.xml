@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.brazona</groupId>
 	<artifactId>bzn-parent-services</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>bzn-parent-services</name>
 	<description>Projeto com as configurações pai dos sistemas de serviços</description>
