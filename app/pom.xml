@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.brazona</groupId>
 	<artifactId>bzn-parent-services</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>bzn-parent-services</name>
 	<description>Projeto com as configurações pai dos sistemas de serviços</description>
@@ -34,7 +34,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<maven.javadoc.version>3.6.3</maven.javadoc.version>
 		<spring-cloud.version>2024.0.1</spring-cloud.version>
-		<bzn-library-core.version>3.0.1-SNAPSHOT</bzn-library-core.version>
+		<bzn-library-core.version>0.0.2-SNAPSHOT</bzn-library-core.version>
 	</properties>
 	<dependencies>
 		<!--<dependency>
@@ -104,6 +104,8 @@
 			<url>https://maven.pkg.github.com/brazona/bzn-library-core</url>
 			<snapshots>
 				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
 	</repositories>
