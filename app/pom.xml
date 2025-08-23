@@ -37,7 +37,16 @@
 		<bzn-library-core.version>0.0.2-SNAPSHOT</bzn-library-core.version>
 	</properties>
 	<dependencies>
-
+		<!--<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>br.brazona</groupId>
 			<artifactId>bzn-library-core</artifactId>
@@ -52,7 +61,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 	<build>
 		<plugins>
 			<plugin>
