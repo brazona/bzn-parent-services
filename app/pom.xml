@@ -38,20 +38,32 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>br.brazona</groupId>
 			<artifactId>bzn-library-core</artifactId>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
+
 		<dependencies>
 			<dependency>
 				<groupId>br.brazona</groupId>
 				<artifactId>bzn-library-core</artifactId>
 				<version>${bzn-library-core.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.38</version>
+				<optional>true</optional>
+				<scope>provided</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>github</id>
