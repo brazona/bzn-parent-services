@@ -36,25 +36,6 @@
 		<spring-cloud.version>2024.0.1</spring-cloud.version>
 		<bzn-library-core.version>0.0.2-SNAPSHOT</bzn-library-core.version>
 	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>br.brazona</groupId>
-			<artifactId>bzn-library-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
-	</dependencies>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>br.brazona</groupId>
-				<artifactId>bzn-library-core</artifactId>
-				<version>${bzn-library-core.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>
