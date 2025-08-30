@@ -15,19 +15,7 @@
 	<packaging>pom</packaging>
 	<name>bzn-parent-services</name>
 	<description>Projeto com as configurações pai dos sistemas de serviços</description>
-	<url />
-	<licenses>
-		<license />
-	</licenses>
-	<developers>
-		<developer />
-	</developers>
-	<scm>
-		<connection />
-		<developerConnection />
-		<tag />
-		<url />
-	</scm>
+
 	<properties>
 		<java.version>24</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
@@ -35,8 +23,35 @@
 		<maven.javadoc.version>3.6.3</maven.javadoc.version>
 		<spring-cloud.version>2024.0.1</spring-cloud.version>
 		<bzn-library-core.version>0.0.2-SNAPSHOT</bzn-library-core.version>
+		<lombok.version>1.18.38</lombok.version>
 	</properties>
-	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<!-- Use the latest stable version -->
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>br.brazona</groupId>
+				<artifactId>bzn-library-core</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>br.brazona</groupId>
+				<artifactId>bzn-library-core</artifactId>
+				<version>${bzn-library-core.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
